@@ -67,7 +67,7 @@ bool URenderStreamStatusWidget::Initialize()
 					if (titleText)
 					{
 						titleText->SetText(FText::FromString("RenderStream Status"));
-						titleText->SetColorAndOpacity(FSlateColor({ 1.0, 1.0, 1.0 }));
+						titleText->SetColorAndOpacity(FSlateColor(FLinearColor{ 1.0, 1.0, 1.0 }));
 						titleText->Font.Size = fontSize;
 						vertBox->AddChild(titleText);
 					}

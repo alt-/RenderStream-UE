@@ -197,7 +197,7 @@ namespace RSUCHelpers
         const FIntPoint& Resolution,
         RenderStreamLink::RSPixelFormat rsFormat)
     {
-        FRHIResourceCreateInfo info{ FClearValueBinding::Green };
+        FRHIResourceCreateInfo info(TEXT("RenderStreamBufTexture"), FClearValueBinding::Green);
 
         struct
         {
